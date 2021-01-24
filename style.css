@@ -93,7 +93,7 @@ nav div ul li{
 }
 .container{
     height: 38rem;
-    background-image: url(files/lake1-min.jpg);
+    background-image: url("files/lake1-min.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
