@@ -19,7 +19,6 @@ h1{
 .navigation{
     background-color: var(--maincolor);
     background-image: linear-gradient(165deg,#1546a0, #0070ba,#1546a0,#062358);
-    /* background-image: linear-gradient(150deg, red,orange,yellow,green,blue,indigo,violet); */
     position: fixed;
     border-bottom: 1px solid var(--maincolor);
     top: 0;
@@ -27,13 +26,6 @@ h1{
     z-index: 100;
     line-height: 2.5rem;
 }
-/* .navlogo{
-    width: 1rem;
-    height: 0.8rem;
-}
-.navlogo:hover{
-    cursor: pointer;
-} */
 nav div ul li{
     list-style: none;
     display: inline-block;
@@ -90,6 +82,23 @@ nav div ul li{
 .searchicon{
     height: 0.7rem;
     /* background-color: yellow; */
+}
+.mob__navigation{
+    display: flex;
+
+}
+.toggle__lines{
+    height: 5px;
+    width: 2rem;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    margin: 2px 0px;
+    border-radius: 1rem;
+    display: block;
+
+}
+.mob__navLinks li{
+    display: block;
 }
 .container{
     height: 38rem;
@@ -270,10 +279,10 @@ cursor: pointer;
 }
 .postP_l_name{
 margin-bottom: 0%;
-font-family: var(--primaryText);
-letter-spacing: 1px;
+font-family: var(--secondaryText);
+letter-spacing: 4px;
 font-weight: bold;
-font-size: 2rem;
+font-size: 2.5rem;
 }
 .postLowerp{
     font-family: var(--postBioText);
@@ -282,7 +291,8 @@ font-size: 2rem;
     font-size: 1rem;
 }
 .pLH-image{
-    height: 11.5rem;
+    height: 12rem;
+    width: 15rem;
     -webkit-box-shadow: 3px 10px 15px 15px rgba(235,203,138,1);
     -moz-box-shadow: 3px 10px 15px 15px rgba(235,203,138,1);
     box-shadow: 3px 10px 15px 15px rgba(235,203,138,1);
@@ -395,17 +405,34 @@ font-size: 2rem;
         grid-template-columns: repeat(2, 35%);
         grid-template-rows: repeat(3, auto);
         }
+    .searchbar[type=text]{
+        display: none;
+    }
+    .searchbtn{
+        display: none;
+    }
+}
+@media screen and (max-width:1280px){
+    .nav_links{
+        margin: 0px 10px 0px 0px;
+    }
 }
 @media screen and (min-width:1249px) and (max-width:1440px){
     .grid-wrapper{
         grid-template-columns: repeat(3, 25%);
         grid-template-rows: repeat(3, auto);
         }
+        .nav_links{
+            margin: 0px 20px 0px 0px;
+        }
 }
 @media screen and (min-width:1441px) and (max-width:2700px){
     .grid-wrapper{
         grid-template-columns: repeat(4, 15%);
         grid-template-rows: repeat(4, auto);
+        }
+        .nav_links{
+            margin: 0px 32px 0px 0px;
         }
 }
 
