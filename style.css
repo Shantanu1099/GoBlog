@@ -3,6 +3,7 @@
     --secondaryText: 'Roboto Condensed', sans-serif;
     --tertiaryText: 'Bree Serif', serif;
     --maincolor: rgb(0, 113, 186);
+    --maincolorLiDark: rgba(21, 70, 160, 1);
     --secondarycolor: rgba(93.7, 93.7, 93.7, 0.1);
     --postColor: rgba(255, 255, 255, 0.5);
     --postImageBorderColor: rgba(93.7, 93.7, 93.7, 0.4);
@@ -83,23 +84,90 @@ nav div ul li{
     height: 0.7rem;
     /* background-color: yellow; */
 }
-.mob__navigation{
+/* .mob__navigation{
     display: flex;
 
+} */
+/* .menu-btn {
+    right: 5%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 50px;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+    border: 3px solid #fff;
+    border-radius: 3px;
+  }
+  .menu-btn__burger {
+    width: 2.5rem;
+    height: 7px;
+    background: #fff;
+    border-radius: 5px;
+    /* box-shadow: 0 2px 5px rgba(255,101,47,.2); 
+    transition: all 200ms ease-in-out;
+  }
+  .menu-btn__burger::before,
+  .menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    width: 2.5rem;
+    height: 7px;
+    background: #fff;
+    border-radius: 5px;
+    /* box-shadow: 0 2px 5px rgba(255,101,47,.2); 
+    transition: all 200ms ease-in-out;
+  }
+  .menu-btn__burger::before {
+    transform: translateY(-14px);
+  }
+  .menu-btn__burger::after {
+    transform: translateY(14px);
+  } */
+.mob__NavBar{
+    /* right: 10%;
+    position: absolute; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 3px;
+    width: 60px;
+    height: 50px;
+    cursor: pointer;
 }
 .toggle__lines{
+    /* in laptop for right toggle */
+    /* right: 5%; */
     height: 5px;
     width: 2rem;
     background-color: whitesmoke;
     border: 1px solid black;
-    margin: 2px 0px;
     border-radius: 1rem;
-    display: block;
-
+    
 }
-.mob__navLinks li{
-    display: block;
+.toggle__lines::before, 
+.toogle__lines::after{
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 2rem;
+    background-color: whitesmoke;
+    border-radius: 1rem;
+    /* transition: all 200ms ease-in-out; */
 }
+.toggle__lines::before{
+    transform: translateY(-13px);
+}
+.toggle__lines::after{
+    transform: translateY(13px);
+}
+/* .mob__navLinks li{
+    display: block;
+} */
 .container{
     height: 38rem;
     background-image: url("files/lake1-min.jpg");
@@ -247,7 +315,7 @@ cursor: pointer;
     color: var(--maincolor);
     text-decoration: none;
     font-family: var(--primaryText);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     transition: 200ms ease-in-out;
 }
 .testimonial a:hover{
@@ -279,10 +347,10 @@ cursor: pointer;
 }
 .postP_l_name{
 margin-bottom: 0%;
-font-family: var(--secondaryText);
-letter-spacing: 4px;
+font-family: var(--tertiaryText);
+letter-spacing: 5px;
 font-weight: bold;
-font-size: 2.5rem;
+font-size: 2rem;
 }
 .postLowerp{
     font-family: var(--postBioText);
@@ -389,7 +457,7 @@ font-size: 2.5rem;
     }
     
     .testimonial a{
-        font-size: 1.1rem;
+        font-size: 1.5rem;
     }
     /* lol{
 
