@@ -127,21 +127,21 @@ nav div ul li{
     transform: translateY(14px);
   } */
 .mob__NavBar{
-    /* right: 10%;
-    position: absolute; */
-    position: relative;
+    top: 0%;
+    right: 5%;
+    position: absolute;
+    /* position: relative; */
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 3px;
     width: 60px;
-    height: 50px;
+    height: 40px;
     cursor: pointer;
+    height: 100%;
 }
 .toggle__lines{
-    /* in laptop for right toggle */
-    /* right: 5%; */
     height: 5px;
     width: 2rem;
     background-color: whitesmoke;
@@ -151,13 +151,13 @@ nav div ul li{
 }
 .toggle__lines::before, 
 .toogle__lines::after{
-    content: "";
+    content: '';
     position: absolute;
     height: 5px;
     width: 2rem;
     background-color: whitesmoke;
     border-radius: 1rem;
-    /* transition: all 200ms ease-in-out; */
+    transition: all 200ms ease-in-out;
 }
 .toggle__lines::before{
     transform: translateY(-13px);
@@ -465,7 +465,10 @@ font-size: 2rem;
     .testimonial a img{
         margin-left: 3px;
         height: 0.7rem;
-}
+    }
+    .nav_links, .searchbar[type=text], .searchbtn{
+        display: none;
+    }
 }
 
 @media screen and (min-width:769px) and (max-width:1248px){
